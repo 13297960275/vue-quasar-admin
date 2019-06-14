@@ -34,6 +34,7 @@ module.exports = function (ctx) {
     css: [
       'app.styl'
     ],
+    theme: { mat: true },
     extras: [
       ctx.theme.mat ? 'roboto-font' : null,
       'material-icons',
@@ -113,7 +114,7 @@ module.exports = function (ctx) {
     },
     devServer: {
       // https: true,
-      // port: 8080,
+      port: 8059,
       open: true // opens browser window automatically
     },
     framework: 'all', //--- includes everything; for dev only!
